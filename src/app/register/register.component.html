@@ -1,0 +1,86 @@
+<form #f="ngForm" class="register-template shadow">
+  <h1 class="register-title">UTWÓRZ KONTO</h1>
+  <label>
+    <p class="label-txt">NICKNAME</p>
+    <input type="text" class="input form-control" name="nickname" ngModel #nickname="ngModel" required>
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+    <div class="alert-box" *ngIf="nickname.invalid && (nickname.dirty || nickname.touched)">
+      <div *ngIf="nickname.errors!.required">
+        <div class="alert alert-warning password-alert">
+          Nickname jest wymagany!
+        </div>
+      </div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">EMAIL</p>
+    <input type="text" class="input form-control" name="email" ngModel #email="ngModel" required>
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+    <div class="alert-box" *ngIf="email.invalid && (email.dirty || email.touched)">
+    <div *ngIf="email.errors!.required">
+      <div class="alert alert-warning password-alert">
+        Adres email jest wymagany!
+      </div>
+    </div>
+    </div>
+  </label>
+  <div class="form-group">
+    <label>
+      <p class="label-txt">HASŁO</p>
+      <input type="password" class="input form-control" name="password" ngModel #password="ngModel" required
+             minlength="4">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+      <div class="alert-box" *ngIf="password.invalid && (password.dirty || password.touched)">
+        <div *ngIf="password.errors!.required">
+          <div class="alert alert-warning password-alert">
+            Hasło jest wymagane!
+          </div>
+        </div>
+        <div *ngIf="password.errors!.minlength">
+          <div class="alert alert-warning password-alert">
+            Hasło powinno składać się z co najmniej 4 znaków!
+          </div>
+        </div>
+      </div>
+
+    </label>
+  </div>
+  <div class="form-group">
+    <label>
+      <p class="label-txt">POTWIERDŹ HASŁO</p>
+      <input type="password" class="input form-control" name="passwordConfirm" ngModel #pwConfirm="ngModel" required
+             compare="password">
+      <div class="line-box">
+        <div class="line">
+        </div>
+      </div>
+      <div class="alert-box" *ngIf="pwConfirm.invalid && (pwConfirm.dirty || pwConfirm.touched)">
+        <div *ngIf="pwConfirm.errors!['required']">
+          <div class="alert alert-warning password-alert">
+            Potwierdzenie hasła jest wymagane!
+          </div>
+        </div>
+        <div *ngIf="pwConfirm.errors!['compare']">
+          <div class="alert alert-warning password-alert">
+            Hasła się nie zgadzają!
+          </div>
+        </div>
+      </div>
+
+    </label>
+  </div>
+  <div>
+    <button class="buttonpush" type="submit" [routerLink]="'/'" [disabled]="pwConfirm.invalid || nickname.invalid || email.invalid? true : null">UTWÓRZ
+    </button>
+  </div>
+</form>
+
+
+
+

@@ -1,0 +1,20 @@
+
+<form #f="ngForm" class="login-template shadow">
+  <h1 class="login-title">LOGOWANIE</h1>
+  <label>
+    <p class="label-txt">NICKNAME</p>
+    <input type="text" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">HASŁO</p>
+    <input type="password" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+    <button type="submit" [routerLink]="'/'">UTWÓRZ</button>
+</form>
+

@@ -1,0 +1,115 @@
+@media only screen and (max-width: 700px) {
+  .register-template{
+    width: 95%;
+    background: #fcfcfc;
+    padding: 60px 20px 80px;
+    text-align: center;
+    font-family: "apercu",sans-serif;
+  }
+
+  .register-title{
+    text-align: center;
+  }
+
+}
+form {
+  width: 60%;
+  margin: 60px auto;
+  background: #fcfcfc;
+  padding: 60px 120px 80px 120px;
+  text-align: center;
+  font-family: "apercu",sans-serif;
+}
+label {
+  display: block;
+  position: relative;
+  margin: 40px 0px;
+}
+.label-txt {
+  position: absolute;
+  top: -1.6em;
+  padding: 10px;
+  font-size: .8em;
+  letter-spacing: 1px;
+  color: #202121;
+  transition: ease .3s;
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.line-box {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: #BCBCBC;
+}
+
+.line {
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #202121;
+  transition: ease .6s;
+}
+.input:focus + .line-box .line {
+  width: 100%;
+}
+
+.register{
+  color: #202121;
+}
+
+.label-active {
+  top: -3em;
+}
+.alert-box{
+  margin-top: 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+  text-align: left;
+  background: #f4f7f6;
+}
+.alert-warning {
+   color: #202121;
+   background-color: #f4f7f6;
+   border-color: #E6EAEA;
+}
+.buttonpush{
+  bottom: 0;
+}
+
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #E6EAEA;
+  font-weight: bold;
+  color: #64686A;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: ease .3s;
+}
+
+.form-control:focus {
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+button:hover {
+  background: #e5e5e5;
+  color: #202121;
+}
+
+.password-validation{
+ max-width: 500px;
+}

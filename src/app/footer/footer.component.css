@@ -1,0 +1,42 @@
+.footer {
+  padding-top: 50px;
+  position: page;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fcfcfc;
+  color: #202121;
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.container{
+  padding-bottom: 30px;
+}
+
+.footer-sign {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #202121;
+}
+
+.logo {
+  margin-top: -10px;
+}
+li{
+  list-style-type: none;
+}
+ul{
+  padding-inline-start: 0px;
+}
+@media only screen and (max-width: 700px) {
+  .menu-footer-template{
+    display: none;
+  }
+
+
+}

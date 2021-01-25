@@ -1,0 +1,39 @@
+
+.container {
+  max-width: 1500px;
+}
+
+.row {
+  align-content: center;
+}
+
+.posts {
+  margin-top: 40px;
+}
+
+.post-text {
+  word-wrap: anywhere;
+}
+
+.widget {
+  margin-top: 40px;
+  background: #fcfcfc;
+  border: 1px solid #E6EAEA;
+}
+
+.card {
+  /*background: #EAE7DC;*/
+  background: #fcfcfc;
+  border: 1px solid #E6EAEA;
+}
+
+.card-img-top {
+  border-bottom: 1px solid #E6EAEA;
+}
+.comments{
+  text-align: right;
+}
+
+
+
+
